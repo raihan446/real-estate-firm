@@ -1,0 +1,4 @@
+import { ArrowUpRight } from 'lucide-react'
+import { properties } from '../data/properties'
+import { PropertyCard } from './PropertyCard'
+export function FeaturedProperties() { return <section id="properties" className="section properties"><div className="section-heading"><div><p className="eyebrow">Selected residences</p><h2>Homes of <i>distinction.</i></h2></div><a href="#contact" className="text-link desktop-link">View private collection <span>↗</span></a></div><div className="property-grid">{properties.map(p => <PropertyCard property={p} key={p.id}/>)}</div><div className="cta-banner"><p className="eyebrow">Beyond the portfolio</p><h2>Looking for more <i>exclusive</i> properties?</h2><p>Access our off-market portfolio and private collection reserved for discerning clients.</p><a href="#contact" className="button button-dark">Contact us <ArrowUpRight size={17}/></a></div></section> }
