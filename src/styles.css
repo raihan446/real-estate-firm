@@ -56,3 +56,6 @@ button,input,select,textarea{font-size:max(16px,1em)}
 .property-card:hover .property-image img{transform:translate3d(0,0,0) scale(1.055)}
 @media (min-width:761px) and (max-width:1024px){.header{gap:20px}.nav{gap:20px}.property-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about,.contact{gap:7vw}.about-images{height:500px}.footer-top{grid-template-columns:1fr 1fr}.newsletter{grid-column:1/-1;max-width:420px}}
 @media (max-width:380px){.header{padding-inline:20px}.hero h1{font-size:2.55rem}.section{padding-inline:20px}.about-images{height:290px}.specs{flex-wrap:wrap}.stats{gap:8px}}
+
+/* Preserve the existing visual language while keeping interactive changes on the compositor. */
+.nav a{transition:color .25s ease}.header-cta{transition:background-color .22s ease,color .22s ease}.header-cta:hover{background:var(--ink);color:#fff}.button{transition:transform .22s ease,background-color .22s ease,color .22s ease,border-color .22s ease}.text-link{transition:color .22s ease,border-color .22s ease}
